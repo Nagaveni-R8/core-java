@@ -8,6 +8,8 @@ class Projector {
 	System.out.println("Projectors can be used for outdoor events");
 	System.out.println("Projector is an optical device that projects an image onto a surface");
 	
+
+	
 	
 	}
 
