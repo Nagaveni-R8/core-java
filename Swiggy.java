@@ -1,27 +1,29 @@
 class Swiggy{
-
-  public static void main(String args[]){
-  
-  System.out.println("main started");
-  
-  String vegStarter[] = {"Gobbi Manchurian" , "Paneer Tikka" , "Mushroom Manchurian" , "Chilli Paneer" , "Babycorn Manchurian" , "Aloo Tikki" , "Babycorn Pepper" , "Schezwan noodles" , "Palak Roll" , "Shawarma"};
-  String nonvegStarter[] = {"Kabab" , "Chikken Tikka" , "Chilli Prawns" , "Ginger Fish" , "Scehzwan Chicken" , "Chilli Chicken" , "chicken Paneer" , "Paneer65" , "Lemon Chicken" , "Chilli Egg" };
-  String nonVegMainCourse[] = {"Chicken Biryani" , "Chicken Chow Mushroom" , "Szechwan Sauce" , "Chicken Fried Rice" , "Butter Chicken" , "Egg Fried Rice" , "Mutton Curry" , "Chicken Curry" , "Chicken Shezwan" , "Chicken Masala"};
-  String vegMainCourse[] = {"Mushroom Masala" , "Veg Fried Rice" , "Dal Makhini" , "Dum Aloo" , "Mix Veg" , "Dal Handi" , "Chana Masala" , "Bhindi Masala" , "Palak Paneer" , "Veg Kharahi"};
-  
-  System.out.println("Available veg starters are :" + vegStarter[0] + "," + vegStarter[1] + "," + vegStarter[2] + "," + vegStarter[3] + "," + vegStarter[4] + "," + vegStarter[5] + "," + vegStarter[6] + "," + vegStarter[7] + "," + vegStarter[8] + "," + vegStarter[9] );
-  System.out.println("Available non veg starters are:" + nonvegStarter[0] + "," + nonvegStarter[1] + "," + nonvegStarter[2] + "," + nonvegStarter[3] + "," + nonvegStarter[4] + "," + nonvegStarter[5] + "," + nonvegStarter[6] + "," + nonvegStarter[7] + "," + nonvegStarter[8] + "," + nonvegStarter[9] );
-  System.out.println("Available non veg main courses are :" + nonVegMainCourse[0] + "," +  nonVegMainCourse[1] + "," + nonVegMainCourse[2] + "," + nonVegMainCourse[3] + "," + nonVegMainCourse[4] + "," + nonVegMainCourse[5] + "," + nonVegMainCourse[6] + "," + nonVegMainCourse[7] + "," + nonVegMainCourse[8] + "," + nonVegMainCourse[9]);
-  System.out.println("Available veg main courses are :" + vegMainCourse[0] + "," + vegMainCourse[1] + "," +  vegMainCourse[2] + "," + vegMainCourse[3] + "," + vegMainCourse[4] + "," + vegMainCourse[5] + "," + vegMainCourse[6] + "," + vegMainCourse[7] + "," + vegMainCourse[8] + "," + vegMainCourse[9] );
-  
-  System.out.println("main ended");
-  
-  
-  
-  
-  }
-
-
-
-
+	
+	
+	public static void main(String args[]){
+	
+	System.out.println("Main Started");
+	
+	 String nonVegStarters[] = {"Chicken kabab","Chicken Tikka","Mutton Seekh kabab","Tandoori Chicken","Fish Fry","Prawn kabab","Chilly Chicken","Chicken 65","Chicken lollipop","Mutton chops"};
+	 String vegStarters[] = {"veg Crispy","veg chilly", "veg garlic","veg lalipop","Gobi manuchiran"," mushroom chilly","mushroom manuchiran","panner65","mix crispy","panner chilly"};
+	 String nonVegMainCourses[] = {"Chicken Biryani" , "Chicken Chow Mushroom" , "Szechwan Sauce" , "Chicken Fried Rice" , "Butter Chicken" , "Egg Fried Rice" , "Mutton Curry" , "Chicken Curry" , "Chicken Shezwan" , "Chicken Masala"};
+	 String vegMainCourses[] = {"Veg Biryani","Mushroom Biryani","Jeera Rice","Ghee Rice","Noodles","Schezwan Friedrice","Parota","Veg Friedrice","Thai Basil Rice","Ginger Friedrice"};
+	System.out.println("The menu is as follows");
+		
+			for(String nonVegStarter : nonVegStarters){
+				System.out.println(nonVegStarter);
+			}
+				for(String vegStarter : vegStarters){
+				System.out.println(vegStarter);
+			}
+				for(String nonVegMainCourse : nonVegMainCourses){
+					System.out.println(nonVegMainCourse);
+				}
+					for(String vegMainCourse : vegMainCourses){
+						System.out.println(vegMainCourse);
+					}
+				
+		System.out.println("Main Ended");
+	}
 }

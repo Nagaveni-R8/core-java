@@ -1,33 +1,40 @@
-class Maggi{
+class Maggi {
 
-	public static void main(String[] food){
-	
-		System.out.println("main Started");
+       public static void main(String[] tasty){
+		  
+	   System.out.println("main started");
+		  
+       String noodlesName = "Maggi";
+       int price = 10;
+       String quantity = "70g";
+	   String countryoforigin = "India";
+       String shelflife = "8 months";
+	   String ingredients[] = {"Refined wheat flour" , "Starch" , "Dehydrated vegetables" , "Carrot bits" , "Green french beans" , "Dehydrated onion"};
+  
+
+
+      
+
+        System.out.println("The name of the noodles brand is" + noodlesName);
+		System.out.println("The price of the noodles is" + price);
+		System.out.println("The quantity of the noodles is" + quantity);
+		System.out.println("The countryoforigin of the noodles is" + countryoforigin);
+		System.out.println("The shelflife of the noodles is" + shelflife);
+		System.out.println("The ingredients of the noodles are" + ingredients);
 		
-		getFeatures();
 		
-		
-		System.out.println("main ended");
-	}
-	
-	public static void getFeatures(){
-		
-		double price = 55.0;
-		int weightInGms = 620;
-		String ingredients[] = {"Maida","Palm oil","Iodized salt","Wheat gluten","Thickeners","Acidity regulators & Humectant","Toastedd onion flakes","colour","Milk","Mustard","Oats","Soy"};
-		String dietType = "Vegetarian";
-		
-		System.out.println("The price of Maggi is: "+price);
-		System.out.println("The quantity is: "+weightInGms);
-		System.out.println("The Diet type is: "+dietType);
-		
-		for(String ingredient : ingredients){
-				
-				System.out.println(ingredient);
-		
-		}
-	
-	
-	}
+        System.out.println("The available ingredients are:");
+        for(String ingredient:ingredients){
+        System.out.println(ingredient);
+
+
+
+
+}
+
+         System.out.println("main ended");
+
+}
+
 
 }
