@@ -5,8 +5,9 @@ class SpotifyAccountCreation{
 		static String emailId ;
 		static String confirmEmailId ;
 		static String dateOfBirth ;
+		static String gender ;
 		
-    public static boolean createSpotifyAccount(String userName, String pwd, String email, String confirmEmail, String dob){
+    public static boolean createSpotifyAccount(String userName, String pwd, String email, String confirmEmail, String dob, String sex){
 	
 	    boolean isSpotifyAccountCreated = false ;
 		boolean isUserNameValid = false ;
@@ -14,6 +15,7 @@ class SpotifyAccountCreation{
 		boolean isEmailValid = false ;
 		boolean isConfirmEmailValid = false ;
 		boolean isDobValid = false ;
+		boolean isSexValid = false ;
 		
 		//validation  //  null check 
 		    if(userName != null){
@@ -50,14 +52,17 @@ class SpotifyAccountCreation{
 			}
 			else
 			    System.out.println("Date of Birth is Invalid");
+			
+			if(sex != null){
+			    gender = sex ;
+				isSexValid = true ;
+			}
+			else
+			    System.out.println("Sex Invalid");
 		    
 			
-			if(isUserNameValid == true && isPwdValid == true && isEmailValid == true && isConfirmEmailValid == true && isDobValid == true)
+			if(isUserNameValid == true && isPwdValid == true && isEmailValid == true && isConfirmEmailValid == true && isDobValid == true && isSexValid == true)
 			isSpotifyAccountCreated = true ;
-		
-		
-		
-		
 		
 		
 		return isSpotifyAccountCreated;
@@ -78,6 +83,7 @@ class SpotifyAccountCreation{
 		
 		System.out.println("The Spotify User Date of Birth is :" + dateOfBirth);
 	
+	    System.out.println("The Spotify User gender is :" + gender);
 		
 		
 	}
