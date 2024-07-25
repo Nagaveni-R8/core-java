@@ -10,5 +10,4 @@ class XworkzRegistrationRunner{
 		System.out.println("Main Ended");
 	
 	}
-	
 }
