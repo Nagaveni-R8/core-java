@@ -7,7 +7,5 @@ class LinkedInAccountCreationRunner{
 			if(LinkedInAccountCreated ==true)
 			LinkedInAccountCreation.readUserLinkedInAccountDetails();
 		System.out.println("Main Ended");
-		
 	}
-	
 }
