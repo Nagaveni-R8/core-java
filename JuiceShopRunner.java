@@ -1,32 +1,44 @@
+import java.util.*;
+
 class JuiceShopRunner{
 
     public static void main(String[] juiceShop){
 	
 	    System.out.println("main started");
 		
-		boolean juiceAdded = JuiceShop.addJuiceName("Garnet Juice");
+		boolean juiceAdded = JuiceShop.addJuiceName("Sugarcane Juice");
 		System.out.println("Juice Name added " + juiceAdded);
 		
-		juiceAdded = JuiceShop.addJuiceName("Plum Juice");
+		juiceAdded = JuiceShop.addJuiceName("Papaya Juice");
+		System.out.println("Juice Name added " + juiceAdded);
+		
+		juiceAdded = JuiceShop.addJuiceName("Grape Juice");
+		System.out.println("Juice Name added " + juiceAdded);
+		
+		juiceAdded = JuiceShop.addJuiceName("Mango Juice");
+		System.out.println("Juice Name added " + juiceAdded);
+		
+		juiceAdded = JuiceShop.addJuiceName("Kiwifruit Juice");
 		System.out.println("Juice Name added " + juiceAdded);
 		
 		juiceAdded = JuiceShop.addJuiceName("Cherry Juice");
 		System.out.println("Juice Name added " + juiceAdded);
 		
-		juiceAdded = JuiceShop.addJuiceName("Raspberry Juice");
+		juiceAdded = JuiceShop.addJuiceName("Lemon Juice");
 		System.out.println("Juice Name added " + juiceAdded);
 		
-		juiceAdded = JuiceShop.addJuiceName("Kiwi Juice");
+		juiceAdded = JuiceShop.addJuiceName("Blueberry Juice");
 		System.out.println("Juice Name added " + juiceAdded);
 		
-		juiceAdded = JuiceShop.addJuiceName("Pear Juice");
-		System.out.println("Juice Name added " + juiceAdded);
+		JuiceShop.showJuiceDetails();
 		
-		juiceAdded = JuiceShop.addJuiceName("Strawberry Juice");
-		System.out.println("Juice Name added " + juiceAdded);
+		boolean juiceNameUpdated = JuiceShop.updateJuiceName("Spinach Juice" , "Grape Juice");
+		System.out.println("Juice Name Updated " + juiceNameUpdated);
 		
-		juiceAdded = JuiceShop.addJuiceName("Pinapple Juice");
-		System.out.println("Juice Name added " + juiceAdded);
+		JuiceShop.showJuiceDetails();
+		
+		boolean juiceNameDeleted = JuiceShop.deleteJuiceName("Sugarcane Juice");
+		System.out.println("Juice Name Deleted " + juiceNameDeleted);
 		
 		JuiceShop.showJuiceDetails();
 		

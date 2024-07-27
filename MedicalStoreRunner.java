@@ -2,39 +2,50 @@ class MedicalStoreRunner{
 
     public static void main(String[] medicines){
 	
-	    boolean medicinesAdded = MedicalStore.addMedicineName("Wellbutrin");
+	    boolean medicinesAdded = MedicalStore.addMedicineName("Vincristine");
 		System.out.println("Medicines added " + medicinesAdded);
 		
-		medicinesAdded = MedicalStore.addMedicineName("Phytonadione");
+		medicinesAdded = MedicalStore.addMedicineName("Methotrexate");
 		System.out.println("Medicines added " + medicinesAdded);
 		
-		medicinesAdded = MedicalStore.addMedicineName("Clindamycin");
+		medicinesAdded = MedicalStore.addMedicineName("Albuterol");
 		System.out.println("Medicines added " + medicinesAdded);
 		
-		medicinesAdded = MedicalStore.addMedicineName("Bacitracin");
+		medicinesAdded = MedicalStore.addMedicineName("Etoposide");
 		System.out.println("Medicines added " + medicinesAdded);
 		
-		medicinesAdded = MedicalStore.addMedicineName("Enzalutamide");
+		medicinesAdded = MedicalStore.addMedicineName("Morphine");
 		System.out.println("Medicines added " + medicinesAdded);
 		
-		medicinesAdded = MedicalStore.addMedicineName("Nicardipine");
+		medicinesAdded = MedicalStore.addMedicineName("Warfarine");
 		System.out.println("Medicines added " + medicinesAdded);
 		
-		medicinesAdded = MedicalStore.addMedicineName("Levofloxacin");
+		medicinesAdded = MedicalStore.addMedicineName("Digoxin");
 		System.out.println("Medicines added " + medicinesAdded);
 		
-		medicinesAdded = MedicalStore.addMedicineName("Silodosin");
+		medicinesAdded = MedicalStore.addMedicineName("Citalopram");
+		System.out.println("Medicines added " + medicinesAdded);
+		
+		medicinesAdded = MedicalStore.addMedicineName("Lidocaine");
 		System.out.println("Medicines added " + medicinesAdded);
 		
 		medicinesAdded = MedicalStore.addMedicineName("Omeprazol");
 		System.out.println("Medicines added " + medicinesAdded);
 		
-		medicinesAdded = MedicalStore.addMedicineName("Raloxifene");
+		medicinesAdded = MedicalStore.addMedicineName("Docetaxel");
 		System.out.println("Medicines added " + medicinesAdded);
 		
-		medicinesAdded = MedicalStore.addMedicineName("Glycerin");
-		System.out.println("Medicines added " + medicinesAdded);
 		
+		
+		MedicalStore.readMedicineDetails();
+		
+		boolean medicineNameUpdated = MedicalStore.updateMedicineName("Paclitaxel","Citalopram");
+		System.out.println("medicineNameUpdated" + medicineNameUpdated);
+		
+		MedicalStore.readMedicineDetails();
+		
+		boolean medicineNameDeleted = MedicalStore.deleteMedicineName("Omeprazol");
+		System.out.println("medicineNameDeleted" + medicineNameDeleted);
 		
 		
 		MedicalStore.readMedicineDetails();
