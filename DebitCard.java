@@ -1,9 +1,21 @@
 class DebitCard{
 
-	int debitCardId;
-	String debitCardHolderName;
-	long debitCardNo;
-	String debitCardExpDate;
-	int debitCardCvv;
+    int cardId;
+	String cardHolderName;
+	long cardNo;
+	String expDate;
+	int cvv;
 	
+	//Parameterized Constructor
+	
+	public DebitCard(int cardId, String cardHolderName, long cardNo, String expDate, int cvv){
+		
+		this.cardId = cardId;
+		this.cardHolderName = cardHolderName;
+		this.cardNo = cardNo;
+		this.expDate = expDate;
+		this.cvv = cvv;
+		
+	}
+
 }
