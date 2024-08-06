@@ -179,8 +179,7 @@ class BankRunner{
 		
 		//Parameterized Constructor
 		
-		
-		Bank ref = new Bank(34657, "Karnataka Bank", "Head Office, Treasuary Department", "KARB0000001", "AAAADDTTUUWW", 8, "Anushree");
+		/*Bank ref = new Bank(34657, "Karnataka Bank", "Head Office, Treasuary Department", "KARB0000001", "AAAADDTTUUWW", 8, "Anushree");
 		System.out.println("Bank Id is " + ref.bankId);
 		System.out.println("Bank Name is " + ref.bankName);
 		System.out.println("Branch Name is " + ref.branchName);
@@ -267,9 +266,34 @@ class BankRunner{
 		System.out.println("IFSC Code is " + ref8.ifscCode);
 		System.out.println("Swift Code is " + ref8.swiftCode);
 		System.out.println("Number of Worker is " + ref8.noOfWorker);
-		System.out.println("Branch Manager Name is " + ref8.branchManagerName);
+		System.out.println("Branch Manager Name is " + ref8.branchManagerName);*/
+		
+		Bank ref = new Bank(34657, "Karnataka Bank", "Head Office, Treasuary Department", "KARB0000001", "AAAADDTTUUWW", 8, "Anushree");
+		ref.displayDetails();
+		Bank ref1 = new Bank(637732, "Canara Bank", "Mumbai", "CNRB0RTGS01", "AAAACDDDDYYY", 12, "Akshay");
+		ref1.displayDetails();
+		Bank ref2 = new Bank(5467326, "Federal Bank", "Mumbai", "FEDB0000379", "GGYYHHUUUULL", 15, "Chandrakala");
+		ref2.displayDetails();
+		Bank ref3 = new Bank(623587, "Bank of Baroda", "Treasury Branch", "BARB07687237", "AAAABBCCDDDD", 10, "Sushil");
+		ref3.displayDetails();
+		Bank ref4 = new Bank(46576, "ICICI Bank", "Corporate Office- Treasury", "ICIC0TREA00", "GGGRRRHHHIII", 14, "Shashikala");
+		ref4.displayDetails();
+		Bank ref5 = new Bank(73632, "Union Bank of India", "Kolkatta", "UTBI0HOA139", "GGGGTTTTWWWW", 18, "Aarshika");
+		ref5.displayDetails();
+		Bank ref6 = new Bank(736278, "HDFC Bank", "Mumbail", "HDFC0999999", "KKKKUUPPFFFF", 20, "Arjun");
+		ref6.displayDetails();
+		Bank ref7 = new Bank(74369, "State Bank of India", "Treasury Branch", "SBIN0004343", "AAAAGGGGWWDD", 16, "Sushanth");
+		ref7.displayDetails();
+		Bank ref8 = new Bank(387221, "Syndicate Bank", "Mumbai", "SYNB000RTGS",  "AABBTTHHKKLL", 13, "Saraswathi");
+		ref8.displayDetails();
 		
 		System.out.println("Main Ended");
+		
+		
+		
+		
+		
+
 		
 	
 	}

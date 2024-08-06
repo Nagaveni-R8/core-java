@@ -5,6 +5,7 @@ class HouseRunner{
 	    System.out.println("Main Started");
 		
 	    /*Default Constructor
+		
 		House ref = new House();
 		ref.houseId = 6831;
 		ref.noOfRooms = 3;
@@ -142,7 +143,7 @@ class HouseRunner{
 		
 		//Parameterized Constructor
 		
-		House ref = new House(3265, 5, 2, "Ananda Nilaya", 2400, 8);
+		/*House ref = new House(3265, 5, 2, "Ananda Nilaya", 2400, 8);
 		System.out.println("House BluePrint are");
 		System.out.println("House Id is " + ref.houseId);
 		System.out.println("Number of Rooms in the house are " + ref.noOfRooms);
@@ -212,11 +213,27 @@ class HouseRunner{
 		System.out.println("Number of Floors in the house are " + ref7.noOfFloors);
 		System.out.println("House Name is " + ref7.houseName);
 		System.out.println("House Square feet of the area is " + ref7.areaInSqrt);
-		System.out.println("Number of Members in the house are " + ref7.noOfMembers);
+		System.out.println("Number of Members in the house are " + ref7.noOfMembers);*/
+    
+	    House ref = new House(3265, 5, 2, "Ananda Nilaya", 2400, 8);
+		ref.readDetails();
+		House ref1 = new House(6321, 3, 3, "Bommarillu", 2400, 7);
+		ref1.readDetails();
+		House ref2 = new House(65327, 2, 1, "Pavithra Nilaya", 1200, 5);
+		ref2.readDetails();
+		House ref3 = new House(326587, 6, 5, "Alakananda Nilaya", 2100, 10);
+	    ref3.readDetails();
+		House ref4 = new House(6715432, 3, 1, "Maathrushri Nilaya", 1600, 4);
+		ref4.readDetails();
+		House ref5 = new House(64357, 8, 4, "Brundavana Nilaya", 3200, 12);
+		ref5.readDetails();
+		House ref6 = new House(67326, 8, 7, "Aadarsha Nilaya", 6400, 12);
+		ref6.readDetails();
+		House ref7 = new House(787632, 12, 6, "Kanasu Nilaya", 2000, 12);
+		ref7.readDetails();
 		
 		System.out.println("Main Ended");
-	
+		
 	}
-
 
 }

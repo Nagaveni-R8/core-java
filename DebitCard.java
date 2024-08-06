@@ -17,5 +17,15 @@ class DebitCard{
 		this.cvv = cvv;
 		
 	}
+	
+	public void displayDetails(){
+			
+			System.out.println("The Card Id is " + this.cardId);
+			System.out.println("The Card Holder Name is " + this.cardHolderName);
+			System.out.println("The Card Number is " + this.cardNo);
+			System.out.println("The Card Expiry Date is " + this.expDate);
+			System.out.println("The Card CVV is " + this.cvv);
+			
+		}
 
 }
