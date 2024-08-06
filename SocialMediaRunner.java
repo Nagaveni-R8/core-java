@@ -121,7 +121,7 @@ class SocialMediaRunner{
 		System.out.println("Social Media Id is " + ref8.socialMediaId);
 		System.out.println("Social Media Name is " + ref8.socialMediaName);
 		System.out.println("Profile Name is " + ref8.profileName);
-		System.out.println("Email Id is " + ref.emailId);*/
+		System.out.println("Email Id is " + ref8.emailId);*/
 		
 		//Parameterized Constructor
 		
